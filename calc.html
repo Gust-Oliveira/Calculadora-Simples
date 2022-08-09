@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shirink-to-fit=no">
+        <title>Caculadora</title>
+        <link rel="stylesheet" href="calc.css" type="text/css"> 
+    </head>
+    <body>
+        <div id="container">
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="4">
+                        <div id="expressao"></div>
+                        <div id="resultado"></div>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><button onclick="paren1()">(</button></td>
+                    <td><button onclick="paren2()">)</button></td>
+                    <td colspan="2"><button onclick="limpar()">CE</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="exp(7)">7</button></td>
+                    <td><button onclick="exp(8)">8</button></td>
+                    <td><button onclick="exp(9)">9</button></td>
+                    <td><button onclick="exp('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="exp(4)">4</button></td>
+                    <td><button onclick="exp(5)">5</button></td>
+                    <td><button onclick="exp(6)">6</button></td>
+                    <td><button onclick="exp('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="exp(1)">1</button></td>
+                    <td><button onclick="exp(2)">2</button></td>
+                    <td><button onclick="exp(3)">3</button></td>
+                    <td><button onclick="exp('-')">-</button></td>
+                </tr>
+            </tbody>
+            <tfoot>
+            <div id="final">
+                <tr>
+                    <td><button onclick="exp(0)">0</button></td>
+                    <td><button onclick="exp('.')">.</button></td>
+                    <td><button onclick="res()">=</button></td>
+                    <td><button onclick="exp('+')">+</button></td>
+                </tr>
+            </div>
+            </tfoot>
+            
+        </table>
+        </div>
+        <script src="calc.js"></script>
+
+    </body>
+</html>
